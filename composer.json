@@ -1,13 +1,12 @@
 {
-  "name": "prettus/l5-repository",
-  "description": "Laravel 5 - Repositories to  the database layer",
+  "name": "zeng407/l5-repository",
+  "description": "Laravel 5 - Repositories to the database layer",
   "keywords": ["laravel", "repository", "eloquent", "model", "cache"],
   "license": "MIT",
   "authors": [
     {
-      "name": "Anderson Andrade",
-      "homepage": "http://andersonandra.de",
-      "email": "contato@andersonandra.de",
+      "name": "Bill Zeng",
+      "email": "zeng.cae37@gmail.com",
       "role": "Developer"
     }
   ],
