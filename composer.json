@@ -10,14 +10,7 @@
       "role": "Developer"
     }
   ],
-  "homepage": "http://andersao.github.io/l5-repository",
-  "support": {
-    "email": "contato@andersonandra.de",
-    "issues":"https://github.com/andersao/l5-repository/issues",
-    "wiki":"https://github.com/andersao/l5-repository",
-    "source":"https://github.com/andersao/l5-repository",
-    "docs": "http://andersao.github.io/l5-repository"
-  },
+  "homepage": "https://github.com/zeng407/l5-repository",
   "require": {
     "illuminate/http": "~5.0",
     "illuminate/config": "~5.0",
