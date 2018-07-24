@@ -1,11 +1,11 @@
 # Simple RequestCriteria
 
-##install
-`
+## install
+```
 composer require zeng407/l5-repository
-`
+```
 
-##filtering
+## filtering
 
 give serchable columns like this
 
@@ -71,7 +71,7 @@ protected $operatorMap = [
 }
 ```
 
-##sorting
+## sorting
 
 ```
 class UserRepository extedns BaseRepository
