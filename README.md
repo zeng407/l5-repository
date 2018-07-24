@@ -1,5 +1,10 @@
 # Simple RequestCriteria
 
+##install
+`
+composer require zeng407/l5-repository
+`
+
 ##filtering
 
 give serchable columns like this
@@ -90,12 +95,12 @@ class UserRepository extedns BaseRepository
 query
 
 ```
-	localhost/users?order_by=user_name
-	// select * from users order by name
-	
-	localhost/users?order_by=phone_number&order_dir=desc (default order_dir=asc)
-	// select * form users 
-	// left join profiles on profiles.user_id = users.id
-	// join phones on phones.profile_id = profiles.id
-	// order by phone_number asec
+localhost/users?order_by=user_name
+// select * from users order by name
+
+localhost/users?order_by=phone_number&order_dir=desc (default order_dir=asc)
+// select * form users 
+// left join profiles on profiles.user_id = users.id
+// join phones on phones.profile_id = profiles.id
+// order by phone_number asec
 ```
