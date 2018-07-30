@@ -8,12 +8,22 @@
 
 namespace Prettus\Repository\Criteria;
 
-
+use Illuminate\Http\Request;
 use Prettus\Repository\Contracts\CriteriaInterface;
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 class SimpleRequestCriteria implements CriteriaInterface
 {
+    /**
+     * @var \Illuminate\Http\Request
+     */
+    protected $request;
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+
     protected $operatorMap = [
         'gt' => '>',
         'gte' => '>=',
