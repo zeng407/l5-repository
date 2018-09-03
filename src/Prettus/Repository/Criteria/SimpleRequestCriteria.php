@@ -11,6 +11,7 @@ namespace Prettus\Repository\Criteria;
 use Illuminate\Http\Request;
 use Prettus\Repository\Contracts\CriteriaInterface;
 use Prettus\Repository\Contracts\RepositoryInterface;
+use Illuminate\Database\Eloquent\Builder;
 
 class SimpleRequestCriteria implements CriteriaInterface
 {
@@ -119,6 +120,23 @@ class SimpleRequestCriteria implements CriteriaInterface
                     ->addSelect("$primaryTable.*");
             }
         }
+
+        /**
+         * -------------
+         * Pagination
+         * -------------
+         */
+
+        $perPage = $this->request->input('per_page');
+        if($perPage){
+            if($model instanceof Builder){
+                $newModel = $model->getModel()->setPerPage($perPage);
+                $model = $model->setModel($newModel);
+            }else{
+                $model = $model->setPerPage($perPage);
+            }
+        }
+        return $model;
 
 
         return $model;
