@@ -136,8 +136,6 @@ class SimpleRequestCriteria implements CriteriaInterface
                 $model = $model->setPerPage($perPage);
             }
         }
-        return $model;
-
 
         return $model;
     }
